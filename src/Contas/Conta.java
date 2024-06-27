@@ -93,5 +93,5 @@ public abstract class Conta {
     public static int getTotalContas() {return Conta.totalContas;}
     public void setNumero(int numero) {this.numero = numero;}
     public void setDono(Cliente dono) {this.dono = dono;}
-    public void setLimite(double limiteMax, double limiteMin);
+    abstract void setLimite(double limiteMax, double limiteMin);
 }
