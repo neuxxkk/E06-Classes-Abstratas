@@ -15,7 +15,8 @@ public class ClientePessoaJuridica extends Cliente {
         this.setor = setor;
          
     }
-
+    
+    @Override
     public String toString(){
         return 
         "\n===== Cliente PJ ====="+
