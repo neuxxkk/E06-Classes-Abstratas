@@ -60,6 +60,7 @@ public abstract class Conta {
         return false;
     }
 
+    @Override
     public String toString() {
         return
         "\n===== Conta " + this.numero + " ====="+
@@ -92,5 +93,5 @@ public abstract class Conta {
     public static int getTotalContas() {return Conta.totalContas;}
     public void setNumero(int numero) {this.numero = numero;}
     public void setDono(Cliente dono) {this.dono = dono;}
-    abstract void setLimite(double limiteMax, double limiteMin);
+    public void setLimite(double limiteMax, double limiteMin);
 }
